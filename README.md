@@ -1,6 +1,9 @@
-Drag this link to your bookmark bar:
-<a href="javascript:!function(){const e=document.querySelectorAll('input[type=radio]');for(const t of e)if('approve'==t.value){t.click();break}const t=document.querySelectorAll('button');for(const e of t)if(e.textContent.includes('Submit review')){e.click();break}}();">APPROVE</a>
+Create a new bookmark and set the following to the `URL` part:
+```
+javascript:!function(){const e=document.querySelectorAll('input[type=radio]');for(const t of e)if('approve'==t.value){t.click();break}const t=document.querySelectorAll('button');for(const e of t)if(e.textContent.includes('Submit review')){e.click();break}}();
+```
 
+This is the expanded version:
 ```javascript
 javascript:(
     function() {
@@ -21,4 +24,4 @@ javascript:(
 )();
 ```
 
-Minified with https://minify-js.com/. Note: replace `"` by `'`.
+You can minify it yourself with https://minify-js.com/.
